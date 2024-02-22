@@ -1,16 +1,20 @@
 body {
     background-image: radial-gradient(circle, #FFFFFF, #E6F7FD);
+    display: grid;
+    grid-template-rows: 1fr 11fr;
+    grid-template-columns: 1fr;
+    gap: 10px;
 }
 #buttons-container {
-    width: 410px;
+    grid-column: 1;
+    grid-row: 1;
     margin: auto;
-    margin-top: 25%;
     display: -webkit-flexbox;
     display: flex;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
 }
-button {
+.button {
     background-color: #EFEDF1;
     border-radius: 15px;
     margin: 3px;
@@ -19,4 +23,9 @@ button {
 }
 button:hover {
     cursor: pointer;
+}
+#form {
+    grid-column: 1;
+    grid-row: 2;
+    margin: auto;
 }
