@@ -1,17 +1,18 @@
 let parent = document.querySelector('div');
-parent.addEventListener("click", ceva);
+parent.addEventListener("click", displayWinner);
 
-function ceva(evt) {
+function displayWinner(evt) {
     let number = Math.floor(Math.random() * 3);
     for (let i = 0; i < 3; ++i) {
-        if (parent.children[i].id == evt.target.id) {
-            if (parent.children[i].id == number) {
-                parent.children[i].innerText = "castigator";
+        let button = parent.children[i];
+        if (button.id == evt.target.id) {
+            if (button.id == number) {
+                button.innerText = "castigator";
             } else {
-                parent.children[i].innerText = "necastigator";
+                button.innerText = "necastigator";
             }
         } else {
-            parent.children[i].innerText = "";
+            button.innerText = "";
         }
     }
 }

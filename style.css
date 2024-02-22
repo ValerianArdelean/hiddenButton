@@ -1,16 +1,19 @@
-#button-container {
-    width: 400px;
+body {
+    background-image: radial-gradient(circle, #FFFFFF, #E6F7FD);
+}
+#buttons-container {
+    width: 410px;
     margin: auto;
+    margin-top: 25%;
     display: -webkit-flexbox;
     display: flex;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 button {
-    display: block;
-    border: 0px;
-    padding: 0px;
-    margin: 0px;
+    background-color: #EFEDF1;
+    border-radius: 15px;
+    margin: 3px;
     width: 130px;
     height: 130px;
 }
