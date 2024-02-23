@@ -2,14 +2,14 @@ let buttonContainer = document.getElementById('buttons-container');
 let n = 4;
 
 document.getElementById("Submit").addEventListener("click", function() {
-    let nn = parseInt(document.getElementById("n").value) + n;
-    for (let i = n; i < nn; ++i) {
+    let submitedValue = parseInt(document.getElementById("n").value) + n;
+    for (let i = n; i < submitedValue; ++i) {
         let button = document.createElement("button");
         button.classList.add("button");
         button.id = i;
         buttonContainer.appendChild(button);
     }
-    n = nn;
+    n = submitedValue;
 });
 
 buttonContainer.addEventListener("click", function(event) {
