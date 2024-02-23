@@ -16,12 +16,10 @@ buttonContainer.addEventListener("click", function(event) {
     let number = Math.floor(Math.random() * n);
     for (let i = 0; i < n; ++i) {
         let button = buttonContainer.children[i];
-        if (button.id == event.target.id) {
-            if (button.id == number) {
-                button.innerText = "castigator";
-            } else {
-                button.innerText = "necastigator";
-            }
+        if (button.id == event.target.id && button.id == number) {
+            button.innerText = "castigator";
+        } else if (button.id == event.target.id && button.id != number) {
+            button.innerText = "necastigator";
         } else {
             button.innerText = "";
         }
