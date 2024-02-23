@@ -2,8 +2,9 @@ let buttonContainer = document.getElementById('buttons-container');
 let n = 4;
 
 document.getElementById("Submit").addEventListener("click", function() {
-    let submitedValue = parseInt(document.getElementById("n").value) + n;
-    for (let i = n; i < submitedValue; ++i) {
+    buttonContainer.textContent = '';
+    let submitedValue = parseInt(document.getElementById("n").value);
+    for (let i = 0; i < submitedValue; ++i) {
         let button = document.createElement("button");
         button.classList.add("button");
         button.id = i;
