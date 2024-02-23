@@ -18,9 +18,9 @@ buttonContainer.addEventListener("click", function(event) {
     for (let i = 0; i < n; ++i) {
         let button = buttonContainer.children[i];
         if (button.id == event.target.id && button.id == number) {
-            button.innerText = "castigator";
+            button.innerText = "winner";
         } else if (button.id == event.target.id && button.id != number) {
-            button.innerText = "necastigator";
+            button.innerText = "loser";
         } else {
             button.innerText = "";
         }
