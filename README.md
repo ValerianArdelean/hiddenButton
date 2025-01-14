@@ -1,10 +1,13 @@
 # Hidden Button
 
-<picture>
-	<img 
-src="https://github.com/ValerianArdelean/hiddenButton/blob/main/Captură%20de%20ecran%20din%202025-01-14%20la%2022.06.02.png" 
-alt="screen shot" width="1000"/> 
-</picture>
+<figure style="text-align: center;">
+    <picture>
+        <img src="assets/preview.png" alt="Screen shot of the app" 
+style="max-width: 100%; height: auto;">
+    </picture>
+    <figcaption>Screen shot of the app showing the buttons and a form 
+for adding more buttons.</figcaption>
+</figure>
 
 A practice web app that implements two features:
 
