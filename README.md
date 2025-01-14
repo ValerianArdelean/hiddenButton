@@ -9,7 +9,7 @@ style="max-width: 100%; height: auto;">
 for adding more buttons.</figcaption>
 </figure>
 
-##Description
+## Description
 
 A practice web app that implements two features:
 <ul>
