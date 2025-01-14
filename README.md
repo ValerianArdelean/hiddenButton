@@ -28,6 +28,6 @@ the form and submitting it.
 Enjoy!
 
 
-The content of this repository is licensed under a Creative Commons 
-Attribution License.
+The content of this repository is licensed under a [Creative Commons 
+Attribution License.](https://creativecommons.org/licenses/by/4.0/deed.en)
 
