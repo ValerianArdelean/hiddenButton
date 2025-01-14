@@ -9,8 +9,9 @@ style="max-width: 100%; height: auto;">
 for adding more buttons.</figcaption>
 </figure>
 
-A practice web app that implements two features:
+##Description
 
+A practice web app that implements two features:
 <ul>
 <li> The first feature greets the user with three buttons upon opening. Two of them are losers, and one 
 is the winner, chosen randomly. The status of a button is revealed when 
