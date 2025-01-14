@@ -1,13 +1,13 @@
 # Hidden Button
 
-A practice webb app that have implemented 2 features: 
+A practice web app that implements two features:
+
 <ul>
-<li> First one is that on opening you are greet with 3 buttons. 2 of them 
-are loosers, one of them 
-is winner. This is chosen randomly. The status of a button is revealed at 
-user click on it.</li>
-<li> Second feature is that the users can add a number of desired 
-buttons.</li>
+<li> The first feature greets the user with three buttons upon opening. Two of them are losers, and one 
+is the winner, chosen randomly. The status of a button is revealed when 
+the user clicks on it.</li>
+<li>The second feature allows users to add a desired number of buttons 
+while keeping their functionality</li>
 </ul>
 
 ## How to run
