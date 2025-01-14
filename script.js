@@ -22,7 +22,7 @@ buttonContainer.addEventListener("click", function(event) {
         if (button.id == event.target.id && button.id == number) {
             button.innerText = "winner";
         } else if (button.id == event.target.id && button.id != number) {
-            button.innerText = "loser";
+            button.innerText = "looser";
         } else {
             button.innerText = "";
         }
