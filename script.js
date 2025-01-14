@@ -1,17 +1,22 @@
 let buttonContainer = document.getElementById('buttons-container');
-let n = 4;
+let n = 3;
+
+function creeateButtons() {
+	for (let i = 0; i < n; ++i) {
+		let button = document.createElement("button");
+		button.classList.add("button");
+		button.id = i;
+		buttonContainer.appendChild(button);
+	}
+}
+creeateButtons();
 
 document.getElementById("Submit").addEventListener("click", function() {
     let submitedValue = parseInt(document.getElementById("n").value);
 	if (typeof submitedValue === 'number' && !isNaN(submitedValue)) {
 		buttonContainer.textContent = '';
-		for (let i = 0; i < submitedValue; ++i) {
-			let button = document.createElement("button");
-			button.classList.add("button");
-			button.id = i;
-			buttonContainer.appendChild(button);
-		}
 		n = submitedValue;
+		creeateButtons();
 	}
 });
 
