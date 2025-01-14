@@ -1,5 +1,11 @@
 # Hidden Button
 
+<picture>
+	<img 
+src="https://github.com/ValerianArdelean/hiddenButton/blob/main/Captură%20de%20ecran%20din%202025-01-14%20la%2022.06.02.png" 
+alt="screen shot" width="1000"/> 
+</picture>
+
 A practice web app that implements two features:
 
 <ul>
