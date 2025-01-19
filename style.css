@@ -5,6 +5,13 @@ body {
 	margin-top: 80px;
 }
 
+.text {
+	text-align: center;
+	font-family: Helvetica, Arial, sans-serif;
+	letter-spacing: 1px;
+	color: #C75050;
+}
+
 #buttons-container {
     grid-row: 1;
     margin-left: 5px;
@@ -32,4 +39,8 @@ button:hover {
 #form {
     grid-row: 2;
     margin: auto;
+}
+
+.fade {
+	opacity: 30%;
 }
