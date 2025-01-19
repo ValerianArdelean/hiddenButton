@@ -13,7 +13,7 @@ function creeateButtons() {
 creeateButtons();
 
 function processUserInput() {
-    let submitedValue = parseInt(document.getElementById("n").value);
+	let submitedValue = parseInt(document.getElementById("n").value);
 	if (typeof submitedValue === 'number' && !isNaN(submitedValue)) {
 		buttonContainer.textContent = '';
 		n = submitedValue;
@@ -22,16 +22,16 @@ function processUserInput() {
 }
 
 buttonContainer.addEventListener("click", function(event) {
-    let number = Math.floor(Math.random() * n);
-    for (let i = 0; i < n; ++i) {
-        let button = buttonContainer.children[i];
-        if (button.id == event.target.id && button.id == number) {
-            button.innerText = "winner";
-        } else if (button.id == event.target.id && button.id != number) {
-            button.innerText = "loser";
+	let number = Math.floor(Math.random() * n);
+	for (let i = 0; i < n; ++i) {
+	let button = buttonContainer.children[i];
+	if (button.id == event.target.id && button.id == number) {
+		button.innerText = "winner";
+	} else if (button.id == event.target.id && button.id != number) {
+		button.innerText = "loser";
         } else {
-            button.innerText = "";
-        }
-    }
+		button.innerText = "";
+	}
+	}
 });
 
