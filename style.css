@@ -4,8 +4,8 @@
 }
 
 body {
-    background-image: radial-gradient(circle, #FFFFFF, #E6F7FD);
-    display: grid;
+	background-image: radial-gradient(circle, #FFFFFF, #E6F7FD);
+	display: grid;
 	grid-template-rows: auto auto auto;
 	height: 100vh;
 }
