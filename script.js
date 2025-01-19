@@ -11,7 +11,7 @@ function creeateButtons() {
 }
 creeateButtons();
 
-document.getElementById("Submit").addEventListener("click", function() {
+document.getElementById("submit").addEventListener("click", function() {
     let submitedValue = parseInt(document.getElementById("n").value);
 	if (typeof submitedValue === 'number' && !isNaN(submitedValue)) {
 		buttonContainer.textContent = '';
