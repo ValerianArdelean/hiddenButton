@@ -8,19 +8,21 @@
     </head>
     <body>
 		<header>
-			<h1 class="text">Hidden Button App</h1>
+			<h1 class="text color">Hidden Button</h1>
 		</header>
 		<main>
-			<div id="buttons-container"></div>
-			<div id="form">
-				<form>
-					<input id="n" type="number" />
-					<button id="Submit" type="button" >SUBMIT </button>
-				</form>
-			</div>
+			<section>
+				<p class="text fade2">Generated Buttons:</p>
+				<div id="buttons-container"></div>
+			</section>
+			<form id="form">
+				<label for="n" class="text fade2">Insert number of Buttons:</label>
+				<input id="n" name="num-buttons" type="number"/>
+				<button id="Submit" type="button" >SUBMIT</button>
+			</form>
 		</main>
 		<footer>
-			<p class="text fade">Made with &hearts; by Valerian @ WellCode.</p>
+			<p class="text color fade1">Made with &hearts; by Valerian @ WellCode.</p>
 		</footer>
         <script src="script.js"> </script>
     </body>
