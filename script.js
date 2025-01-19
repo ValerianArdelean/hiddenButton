@@ -9,16 +9,17 @@ function creeateButtons() {
 		buttonContainer.appendChild(button);
 	}
 }
+
 creeateButtons();
 
-document.getElementById("submit").addEventListener("click", function() {
+function processUserInput() {
     let submitedValue = parseInt(document.getElementById("n").value);
 	if (typeof submitedValue === 'number' && !isNaN(submitedValue)) {
 		buttonContainer.textContent = '';
 		n = submitedValue;
 		creeateButtons();
 	}
-});
+}
 
 buttonContainer.addEventListener("click", function(event) {
     let number = Math.floor(Math.random() * n);
