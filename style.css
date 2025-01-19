@@ -39,22 +39,21 @@ main {
 }
 
 #buttons-container {
-    margin: auto;
-    display: -webkit-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    justify-content: center;
+	margin: auto;
+	display: -webkit-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: center;
 	min-height: 136px;
 }
 
 .button {
-    background-color: OldLace;
-    border-radius: 35px;
-    margin: 3px;
-    width: 130px;
-    height: 130px;
-
+	background-color: OldLace;
+	border-radius: 35px;
+	margin: 3px;
+	width: 130px;
+	height: 130px;
 }
 
 #Submit {
@@ -64,7 +63,7 @@ main {
 }
 
 button:hover {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 @media (max-width: 650px) {
@@ -76,6 +75,6 @@ button:hover {
 	
 	#form {
 		text-align: center;
-	
 	}
 }
+
