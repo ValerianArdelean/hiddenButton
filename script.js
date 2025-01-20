@@ -24,14 +24,14 @@ function processUserInput() {
 buttonContainer.addEventListener("click", function(event) {
 	let number = Math.floor(Math.random() * n);
 	for (let i = 0; i < n; ++i) {
-	let button = buttonContainer.children[i];
-	if (button.id == event.target.id && button.id == number) {
-		button.innerText = "winner";
-	} else if (button.id == event.target.id && button.id != number) {
-		button.innerText = "loser";
-        } else {
-		button.innerText = "";
-	}
+		let button = buttonContainer.children[i];
+		if (button.id == event.target.id && button.id == number) {
+			button.innerText = "winner";
+		} else if (button.id == event.target.id && button.id != number) {
+			button.innerText = "loser";
+        	} else {
+			button.innerText = "";
+		}
 	}
 });
 
