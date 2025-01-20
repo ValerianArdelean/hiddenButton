@@ -2,22 +2,18 @@
 
 <figure style="text-align: center;">
     <picture>
-        <img src="assets/preview.png" alt="Screen shot of the app" 
-style="max-width: 100%; height: auto;">
+        <img src="assets/preview.png" alt="Screen shot of the app" style="max-width: 100%; height: auto;">
     </picture>
-    <figcaption>Screen shot of the app showing the buttons and a form 
-for adding more buttons.</figcaption>
+    <figcaption>Screen shot of the app showing the buttons and a form for adding more buttons.</figcaption>
 </figure>
 
 ## Description
 
 A practice web app that implements two features:
 <ul>
-<li> The first feature greets the user with three buttons upon opening. Two of them are losers, and one 
-is the winner, chosen randomly. The status of a button is revealed when 
+	<li> The first feature greets the user with three buttons upon opening. Two of them are losers, and one is the winner, chosen randomly. The status of a button is revealed when 
 the user clicks on it.</li>
-<li>The second feature allows users to add a desired number of buttons 
-while keeping their functionality</li>
+	<li>The second feature allows users to add a desired number of buttons while keeping their functionality</li>
 </ul>
 
 ## How to run
@@ -37,7 +33,7 @@ the form and submitting it.
 
 Enjoy!
 
-
+#
 The content of this repository is licensed under a [Creative Commons 
 Attribution License.](https://creativecommons.org/licenses/by/4.0/deed.en)
 
