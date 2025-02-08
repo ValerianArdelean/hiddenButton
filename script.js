@@ -1,31 +1,29 @@
-function createButtons(size) {
-	let n = 3;
-	if (!isNaN(size) && size >= 0 && size < 10000) {
-		n = size;
+function createButtons(totalButtons) {
+
+	totalButtons = parseInt(totalButtons);
+	if (isNaN(totalButtons) || totalButtons < 0) {
+		alert("Invalid input: Please provide a positive number.");
+		return;
 	}
-	
-	let winner = Math.floor(Math.random() * n) + 1;
-	
-	let buttonContainer = document.getElementById('buttons-container');
-	buttonContainer.innerHTML = "";
-	
-	for (let i = 1; i <= n; ++i) {
-		let button = document.createElement("button");
+
+	const buttonsContainerElement = document.getElementById("buttons-container");
+	buttonsContainerElement.replaceChildren();
+
+	const winningButtonId = (Math.floor(Math.random() * totalButtons)) + 1;
+
+	for (let i = 1; i <= totalButtons; ++i) {
+		const button = document.createElement("button");
+		button.id = i.toString();
+		button.textContent = i === winningButtonId ? "winner" : "loser";
+		button.onclick = () => changeClass(button);
 		button.classList.add("button", "hide");
-		button.id = i;
-		button.innerText = "looser";
-		if (i == winner) {
-			button.innerText = "winner";
-		}
-		button.setAttribute("onclick", "changeClass(this.id)");
-		buttonContainer.appendChild(button);
+		buttonsContainerElement.appendChild(button);
 	}
 }
 
-createButtons();
-
-function changeClass(id) {
-	let button = document.getElementById(id);
-	button.classList.replace("hide", "reveal");
+function changeClass(button) {
+	button.classList.remove("hide");
+	button.classList.add("reveal");
 }
 
+createButtons(3);
