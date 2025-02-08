@@ -1,6 +1,6 @@
 function createButtons(size) {
 	let n = 3;
-	if (!isNaN(size) && size > 0 && size < 10000) {
+	if (!isNaN(size) && size >= 0 && size < 10000) {
 		n = size;
 	}
 	

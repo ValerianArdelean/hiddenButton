@@ -19,6 +19,10 @@ main {
 	margin: auto;
 }
 
+footer {
+	margin-top: auto;
+}
+
 .text {
 	text-align: center;
 	font-family: Helvetica, Arial, sans-serif;
