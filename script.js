@@ -1,7 +1,7 @@
 function createButtons(size) {
 	let n = 3;
 	if (!isNaN(size) && size > 0 && size < 10000) {
-			n = size;
+		n = size;
 	}
 	
 	let winner = Math.floor(Math.random() * n) + 1;
