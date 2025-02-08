@@ -48,6 +48,14 @@ main {
 	min-height: 136px;
 }
 
+.hide {
+	color: OldLace;
+}
+
+.reveal {
+	color: black;
+}
+
 .button {
 	background-color: OldLace;
 	border-radius: 35px;
